@@ -6,6 +6,7 @@
 /* цвет контактов в футере rgba(255, 255, 255, 0.6); */
 /* цвет фона секции #F5F4FA; */
 /* цвет фона футера #2F303A; */
+/* цвет кнопки на index.html при hover и focus #188CE8 */
 
 :root{
     --accent-color:#2196F3;
@@ -16,6 +17,7 @@
     --secondary-background-color:#2F303A;
     --contacts-footer-color:rgba(255, 255, 255, 0.6);
     --secondary-button-color:#F5F4FA;
+    --button-hover-color: #188CE8;
 
 }
 
@@ -109,8 +111,6 @@ body{
 .hero .title{
     color:var(--secondary-color);
 
-    
-
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -125,7 +125,7 @@ body{
     color: var(--secondary-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    border-color: var(--accent-color);
+    border-color: transparent;
 
     font-family: inherit;
    
@@ -138,12 +138,18 @@ body{
     cursor: pointer;
 }
 
+.hero .button:hover,
+.hero .button:focus{
+    background-color: var(--button-hover-color);
+    color: var(--secondary-color);
+
+}
 
 
 
 .advantages .header{
     color: var(--secondary-text-color);
-
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -168,6 +174,13 @@ body{
     letter-spacing: 0.03em;
 }
 
+.team{
+    background-color: var(--secondary-button-color);
+}
+
+.team-item{
+    background-color: var(--secondary-color);
+}
 
 .team .name {
     color: var(--secondary-text-color);
@@ -193,12 +206,16 @@ body{
 .footer .address{
     color: var(--secondary-color);
     font-style: normal;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
     text-decoration: none;
 }
 
 .footer .contacts{
     color: var(--contacts-footer-color);
     font-style: normal;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
     text-decoration: none;
 }
 
@@ -228,7 +245,7 @@ body{
     color: var(--secondary-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    border-color: var(--accent-color);
+    border-color: transparent;
 
     cursor: pointer;
 
@@ -238,6 +255,7 @@ body{
     background-color: var(--secondary-button-color);
     color: var(--secondary-text-color);
     border-radius: 4px;
+    border-color: transparent;
 }
 
 .card{
@@ -249,5 +267,5 @@ body{
     
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
+  
 }
