@@ -127,8 +127,6 @@ body{
     border-radius: 4px;
     border-color: var(--accent-color);
 
-    /* ??????Если убираю, то Roboto не получается
-    font-family: 'Roboto'; */
     font-family: inherit;
    
     font-weight: 700;
@@ -215,9 +213,6 @@ body{
 
 
 .works .filter{
-    /* ??????Если убираю, то Roboto не получается
-    font-family: 'Roboto'; */
-
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
