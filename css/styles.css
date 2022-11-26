@@ -1,0 +1,240 @@
+/* цвет основного текста #757575; */
+/* цвет заголовков #212121; */
+/* цвет акцента #2196F3; */
+/* цвет лого-header #000000; */
+/* цвет h1 #FFFFFF; */
+/* цвет контактов в футере rgba(255, 255, 255, 0.6); */
+/* цвет фона секции #F5F4FA; */
+/* цвет фона футера #2F303A; */
+
+:root{
+    --accent-color:#2196F3;
+    --logo-header-color:#000000;
+    --secondary-color:#FFFFFF;
+    --primary-text-color:#757575;
+    --secondary-text-color:#212121;
+    --secondary-background-color:#2F303A;
+    --contacts-footer-color:rgba(255, 255, 255, 0.6);
+    --secondary-button-color:#F5F4FA;
+
+}
+
+body{
+    background-color: var(--secondary-color);
+    color: var(--primary-text-color);
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+.list{
+    list-style: none;
+}
+
+.logo{
+    color: var(--accent-color);
+    text-decoration: none;
+    
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+}
+.logo-header{
+    color: var(--logo-header-color);
+
+}
+.logo-footer{
+    color: var(--secondary-color);
+}
+
+.site-nav .link{
+    color:var(--secondary-text-color);
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link.current {
+    color: var(--accent-color);
+
+   
+}
+
+.contacts-header .contacts-text{
+    color: var(--primary-text-color);
+    
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+}
+
+.contacts-header .contacts-text:hover,
+.contacts-header .contacts-text:focus,
+.footer .address:hover,
+.footer .address:focus,
+.footer .contacts:hover,
+.footer .contacts:focus
+{
+    color: var(--accent-color);
+}
+
+/* .hero{
+    
+} */
+
+.hero .title{
+    color:var(--secondary-color);
+
+    background-color: var(--secondary-background-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero .button
+{
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: var(--accent-color);
+
+    /* ??????Если убираю, то Roboto не получается */
+    font-family: 'Roboto';
+   
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;  
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+}
+
+
+
+
+.advantages .header{
+    color: var(--secondary-text-color);
+
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.advantages .text{
+
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.services .header,
+.team .header
+{
+    color: var(--secondary-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+
+.team .name {
+    color: var(--secondary-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.team .position{
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.footer{
+    background-color: var(--secondary-background-color);
+}
+
+.footer .address{
+    color: var(--secondary-color);
+    font-style: normal;
+    text-decoration: none;
+}
+
+.footer .contacts{
+    color: var(--contacts-footer-color);
+    font-style: normal;
+    text-decoration: none;
+}
+
+.works .title{
+    color: var(--secondary-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+
+.works .filter{
+    /* ??????Если убираю, то Roboto не получается */
+    font-family: 'Roboto';
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.filter.primary,
+.filter.secondary:hover,
+.filter.secondary:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: var(--accent-color);
+
+    cursor: pointer;
+
+}
+
+.filter.secondary {
+    background-color: var(--secondary-button-color);
+    color: var(--secondary-text-color);
+    border-radius: 4px;
+}
+
+.card{
+    text-decoration: none;
+}
+
+.category{
+    
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
